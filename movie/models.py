@@ -1,5 +1,4 @@
 from django.db import models
-from rest_framework.fields import CharField
 
 
 class MovieCategory(models.Model):
@@ -12,11 +11,7 @@ class MovieCategory(models.Model):
         return f"{self.name}"
 
 
-class MovieInformation(models.Model):
-    category = models.ForeignKey(MovieCategory)
-    name = models.CharField(max_length=50)
-    studio = models.CharField(max_length=50)
-
+class Content(TimeStempModel)
 
 
 
